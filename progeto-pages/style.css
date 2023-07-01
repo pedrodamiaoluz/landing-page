@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+:root{
+    --cor0: #E6D6B1;
+    --cor1: #FFCDB2;
+    --cor2: #CC5803;
+    --cor3: #E05012;
+    --cor4: #E09302;
+    
+}
 
 header{
-    background-color: bisque;
+    background-color: var(--cor0);
     width: 800px;
 
 }

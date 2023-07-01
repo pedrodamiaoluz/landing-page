@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+header{
+    background-color: bisque;
+    width: 800px;
+
+}
+
+header img{
+    padding: 20px;
+}
+
+nav > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button{
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+}

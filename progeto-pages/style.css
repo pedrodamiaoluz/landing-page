@@ -20,9 +20,10 @@ body{
 
 header{
     background-color: var(--cor1);
-    min-height: 30px;
-    padding-top: 20px;
+    min-height: 20px;
+    padding-top: 10px;
     padding-bottom: 40px;
+    border: 1px solid black;
 
 }
 
@@ -30,6 +31,7 @@ header{
 header img{
     display: table-cell;
     float: left;
+    margin: auto;
     padding: 20px;
     padding-left: 80px;
     padding-right: 20em;
@@ -37,8 +39,8 @@ header img{
 
 nav{
     padding: 10px;
-    margin: 10px;
 }
+
 
 nav > a{
     background-color: var(--cor1);
@@ -62,3 +64,75 @@ div.button > a{
      box-shadow: 4px 4px 4px black;
      
 }
+
+main{
+    background-color: var(--cor1);
+    padding: 20px;
+    min-width: 635px;
+    max-width: 1366px;
+    margin: auto;
+}
+
+section#principal{
+    background-color: var(--cor1);
+}
+
+section#principal > img{
+    background-color: var(--cor1);
+    padding: 10px 0px 0px 0px;
+    display: table-cell;
+    float: right;
+    margin: auto;
+}
+
+div.cabesalho{
+    background-color: var(--cor1);
+    width: 350px;
+    height: 600px;
+    margin: 0px 0px 0px 50px;
+}
+
+div.cabesalho > h1{
+    padding: 2.2em 1em 0em 0em;
+    font-size: 3.1em;
+}
+
+
+div.cabesalho > p{
+    text-align: justify;
+    padding: 2em 0em 2em 0em;
+}
+
+div > img{
+    float: right;
+    padding: 30px;
+}
+
+span{
+    color: var(--cor3);
+}
+.but{
+     background-color: var(--cor3);
+     color: black;
+     font-weight: bold;
+     text-decoration: none;
+     padding: 5px 30px;
+     margin: 0px 0px 0px 5em;
+     box-shadow: 4px 4px 4px black;
+}
+
+div.piano{
+    background-color: aqua;
+    width: 20%;
+    padding: 20px;
+}
+
+div.piano > img{
+    float: left;
+    display: block;
+    padding: 5px;
+}
+
+strong{
+    position: relative;
+} 

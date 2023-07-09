@@ -1,71 +1,139 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --cor0: #E6D6B1;
     --cor1: #FFCDB2;
     --cor2: #CC5803;
     --cor3: #E05012;
     --cor4: #E09302;
-    
+
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-color: var(--cor0);
+
+
+body {
+
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-header{
-    background-color: var(--cor1);
-    min-height: 20px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+.header-content {
+    background-color: #FFFFFF;
     border: 1px solid black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
 
+@media screen and (max-width: 425px) {
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
 
-header img{
-    display: table-cell;
-    float: left;
-    margin: auto;
-    padding: 20px;
-    padding-left: 80px;
-    padding-right: 20em;
-}
-
-nav{
-    padding: 10px;
+    }
 }
 
 
-nav > a{
-    background-color: var(--cor1);
-    color: black;
-    text-decoration: none;
+.logo {
+    width: 33%;
+    height: 100%;
+    display: flex;
+}
+
+@media screen and (max-width: 425px) {
+    .logo{
+        align-items: flex-end;
+    }
+}
+
+.header-menu {
+    width: 34%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+    .header-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) ;
+        grid-template-rows: 2fr 2fr;
+    }
+}
+
+.button-menu {
+    width: 70px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 20px;
     font-weight: bold;
-    padding: 10px;
-    display: table-cell;
-    float: left;
-    margin: 10px;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+
 }
 
-div.button > a{
-     background-color: var(--cor3);
-     color: black;
-     font-weight: bold;
-     text-decoration: none;
-     padding: 5px 20px;
-     margin: 10px;
-     margin-left: 20em;
-     box-shadow: 4px 4px 4px black;
-     
+@media screen and (max-width: 425px) {
+    .button-menu {
+    
+
+    }
 }
 
-main{
+.button {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+    .button {
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+    }
+}
+
+.button-sign-in {
+    width: 200px;
+    height: 48px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    box-shadow: 4px 4px 0px 0px #1E1E1E;
+    background-color: #E05012;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .button-sign-in {
+        
+    }
+}
+
+main {
     background-color: var(--cor1);
     padding: 20px;
     min-width: 635px;
@@ -73,11 +141,11 @@ main{
     margin: auto;
 }
 
-section#principal{
+section#principal {
     background-color: var(--cor1);
 }
 
-section#principal > img{
+section#principal>img {
     background-color: var(--cor1);
     padding: 10px 0px 0px 0px;
     display: table-cell;
@@ -85,54 +153,51 @@ section#principal > img{
     margin: auto;
 }
 
-div.cabesalho{
+div.cabesalho {
     background-color: var(--cor1);
     width: 350px;
     height: 600px;
     margin: 0px 0px 0px 50px;
 }
 
-div.cabesalho > h1{
+div.cabesalho>h1 {
     padding: 2.2em 1em 0em 0em;
     font-size: 3.1em;
 }
 
 
-div.cabesalho > p{
+div.cabesalho>p {
     text-align: justify;
     padding: 2em 0em 2em 0em;
 }
 
-div > img{
-    float: right;
-    padding: 30px;
-}
-
-span{
+span {
     color: var(--cor3);
 }
-.but{
-     background-color: var(--cor3);
-     color: black;
-     font-weight: bold;
-     text-decoration: none;
-     padding: 5px 30px;
-     margin: 0px 0px 0px 5em;
-     box-shadow: 4px 4px 4px black;
+
+.but {
+    background-color: var(--cor3);
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin: 0px 0px 0px 5em;
+    box-shadow: 4px 4px 4px black;
 }
 
-div.piano{
+
+div.piano {
     background-color: aqua;
     width: 20%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-div.piano > img{
+div.piano>img {
     float: left;
     display: block;
+    width: 50px;
+    height: 50px;
     padding: 5px;
 }
-
-strong{
-    position: relative;
-} 

@@ -21,6 +21,26 @@ body{
     height: 100vh;
 }
 
+.cont_button button{
+    background-color: #E05012;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cont_button button:hover{
+    transform: scale(1.10);
+    box-shadow: 0 0 8px #CC5803;
+}
+
+.flex{
+    display: flex;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -29,6 +49,7 @@ body{
 /*Configuraões cabesalho*/
 
 header{
+    width: 100%;
     padding: 30px 4%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.499);
 }
@@ -43,13 +64,13 @@ header nav a{
     color: black;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: .8s;
 }
 
 header nav a:hover{
     color: #E05012;
-    transform: scale(1.10);
     font-weight: 500;  
+    transform: scale(1.30);
 }
 
 header nav ul{
@@ -61,20 +82,170 @@ header nav ul li{
     padding: 10px 40px;
 }
 
-header .cont_button button{
-    background-color: #E05012;
+/*Configuração da section do topo do toms*/
+
+section.topo_toms{
+    padding: 20px 4%;
+}
+
+section.topo_toms .flex{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h1 strong{
+    color: #CC5803;
+}
+
+.topo_toms .text_topo p{
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.topo_toms .text_topo .img_text_topo{
+    padding-top: 30px;
+    padding-left: 30%;
+}
+
+/*Configurações da section instrumentos*/
+
+section.instrumentos{
+    padding: 40px 4%;
+}
+
+section.instrumentos .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instrumentos .piano{
+    width: 70%;
+    background-color: #CC5803;
+}
+
+.instrumentos .teoria_musical{
+    width: 70%;
+    margin-top: 30px;
+    background-color: #E09302;
+}
+
+.instrumentos .sax_alto{
+    width: 70%;
+    background-color: #CC5803;
+    
+}
+
+.instrumentos .bateria{
+    width: 70%;
+    margin-top: 30px;
+    background-color: #E09302;
+}
+
+.instrumentos .inst{
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+}
+
+.instrumentos .inst img{
+    padding: 0 0 10px 10px;
+}
+
+.instrumentos .inst h2{
+    padding: 0 0 10px 10px;
+}
+
+.instrumentos .inst p{
+    padding: 0 10px 10px 10px;
+    text-align: justify;
+}
+
+.instrumentos .inst .seta_seguir{
+     margin-left: 80%;
+     margin-bottom: -50px;
+}
+
+.instrumentos .cursos{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.instrumentos .cursos .cont_button{
+    margin-top: 30px;
+}
+
+/*Configurações do footer*/
+
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.499);
+}
+
+footer .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+footer p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+footer input{
+    width: 400px;
+    padding: 5px;
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+    box-shadow: 3px 3px 0 0 black;
+}
+
+footer nav a{
+    color: black;
+    text-decoration: none;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
     padding: 10px 40px;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
 }
 
-header .cont_button button:hover{
-    transform: scale(1.10);
-    box-shadow: 0 0 8px #CC5803;
-}
+@media screen and (max-width: 970px){
+     
+    /*Cofiguração geral*/
+    .flex{
+        flex-direction: column;
+    }
 
+    /*Cofiguração do cabesalho*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a{
+        margin: 20px 0 20px 0;
+    }
+    
+    /*Cofiguração do topo_toms*/
+    section.topo_toms .flex{
+        flex-direction: column-reverse
+    }
+
+    section.topo_toms .img_topo img{
+        width: 400px;
+        height: 400px;
+    }
+
+}
  

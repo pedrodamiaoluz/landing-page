@@ -70,7 +70,7 @@ header nav a{
 header nav a:hover{
     color: #E05012;
     font-weight: 500;  
-    transform: scale(1.30);
+    transform: scale(1.10);
 }
 
 header nav ul{
@@ -80,6 +80,80 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 10px 40px;
+}
+
+/*configuração do menu mobile*/
+
+.but_abrir-menu-mob i{
+    color: black;
+    font-size: 40px;
+    padding: 40px 4%;
+}
+
+.menu-mobile{
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 2000;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir_menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir_menu ~ .overlay-menu-mob{
+    display: block;
+}
+
+.menu-mobile .but-fechar{
+    padding: 20px 5%;
+    text-align: left;
+}
+
+.menu-mobile .but-fechar i{
+    color: #000;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li{
+    display: block;
+    padding: 10px;
+}
+
+.menu-mobile nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 8%;
+    display: block;
+    transition: .5s;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #CC5803;
+    color: black;
+    transform: scale(1.10);
+    font-weight: 500;
+}
+
+.overlay-menu-mob{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
 }
 
 /*Configuração da section do topo do toms*/
@@ -182,7 +256,6 @@ section.instrumentos .flex{
 }
 
 /*Configurações do footer*/
-
 footer{
     padding: 30px 4%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.499);
@@ -191,12 +264,11 @@ footer{
 footer .flex{
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 18%;
 }
 
-footer p{
-    padding-top: 20px;
-    text-align: justify;
+footer h3{
+    text-align: center;
 }
 
 footer input{
@@ -207,20 +279,15 @@ footer input{
     box-shadow: 3px 3px 0 0 black;
 }
 
-footer nav a{
-    color: black;
-    text-decoration: none;
+footer .img_icon_inst img{
+    padding: 5px;
 }
 
-footer nav ul{
-    list-style-type: none;
+footer .cont_button{
+    text-align: center;
 }
 
-footer nav ul li{
-    padding: 10px 40px;
-}
-
-@media screen and (max-width: 970px){
+@media screen and (max-width: 1023px){
      
     /*Cofiguração geral*/
     .flex{
@@ -228,13 +295,8 @@ footer nav ul li{
     }
 
     /*Cofiguração do cabesalho*/
-    header .container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    header nav a{
-        margin: 20px 0 20px 0;
+    .menu_dextop, .cont_button{
+        display: none;
     }
     
     /*Cofiguração do topo_toms*/
@@ -243,8 +305,60 @@ footer nav ul li{
     }
 
     section.topo_toms .img_topo img{
-        width: 400px;
+        width: 370px;
         height: 400px;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+
+    section.topo_toms .text_topo{
+        padding: 20px;
+    }
+
+    section.topo_toms h1{
+        margin-top: -50px;
+    }
+
+    section.topo_toms p{
+        font-size: 22px;
+    }
+
+    /*Cofiguração dos instrumentos*/
+    section.instrumentos .piano{
+        width: 90%;
+    }
+
+    section.instrumentos .teoria_musical{
+        margin-top: -5px;
+        margin-left: 20px;
+        width: 90%;
+    }
+     
+    section.instrumentos .sax_alto{
+        width: 90%;
+    }
+
+    section.instrumentos .bateria{
+        margin-top: -5px;
+        margin-left: 20px;
+        width: 90%;
+    }
+ 
+    section.instrumentos .cursos h1{
+        font-size: 50px;
+    }
+
+    /*Cofiguração do footer*/
+    footer .receber_material h3{
+        margin-top: 20px;
+    }
+
+    footer .receber_material input{
+        width: 350px;
+    }
+
+    footer .img_icon_inst img{
+        padding-top: 40px;
     }
 
 }

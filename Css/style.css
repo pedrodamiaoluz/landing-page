@@ -174,7 +174,7 @@ section.topo_toms .flex{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -318,10 +318,7 @@ footer .cont_button{
         flex-direction: column-reverse
     }
 
-    section.topo_toms h1{
-        font-size: 50px;
-    }
-
+   
     section.topo_toms .img_topo img{
         width: 370px;
         height: 400px;
@@ -334,6 +331,7 @@ footer .cont_button{
     }
 
     section.topo_toms h1{
+        font-size: 50px;
         margin-top: -50px;
     }
 

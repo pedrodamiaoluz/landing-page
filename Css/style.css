@@ -318,6 +318,10 @@ footer .cont_button{
         flex-direction: column-reverse
     }
 
+    section.topo_toms h1{
+        font-size: 60px;
+    }
+
     section.topo_toms .img_topo img{
         width: 370px;
         height: 400px;
